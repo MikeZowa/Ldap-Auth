@@ -11,7 +11,7 @@ import java.time.format.DateTimeFormatter;
 @RequestMapping("/api")
 public class Controller {
 
-	@GetMapping("/")
+	@GetMapping("/sec")
 	public String showMessageOfTheDay(){
 		return "Hello its: "+ LocalDateTime.now()
 				.format(DateTimeFormatter.ofPattern("HH:mm 'on a' EEEE  'the' dd-MM-yyyy"));
